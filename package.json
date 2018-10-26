@@ -4,7 +4,7 @@
     "dev": "node server.js",
     "build": "next build",
     "start": "SET NODE_ENV=production | node server.js",
-    "deploy": "yarn build && yarn start"
+    "deploy": "yarn install && yarn build && yarn start"
   },
   "browserslist": [
     "last 2 version"
