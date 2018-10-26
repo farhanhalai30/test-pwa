@@ -10,7 +10,7 @@ module.exports = withCSS({
       fs: "empty"
     };
 
-    if (!isServer) {
+    if (isServer) {
       config.module.rules.find(({ test }) => test.test("style.css")).use.push({
         loader: "css-purify-webpack-loader",
         options: {
@@ -64,7 +64,7 @@ module.exports = withCSS({
       ]
     };
 
-    if (!isServer) {
+    if (isServer) {
       config.plugins.push(
         new NextWorkboxPlugin({
           buildId,
