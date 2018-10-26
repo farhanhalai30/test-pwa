@@ -3,7 +3,7 @@
   "scripts": {
     "dev": "node server.js",
     "build": "next build",
-    "start": "SET NODE_ENV=production | node server.js",
+    "start": "next start -p $PORT",
     "deploy": "yarn install && yarn build && yarn start"
   },
   "browserslist": [
