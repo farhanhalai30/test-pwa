@@ -28,7 +28,7 @@ class Header extends Component {
           <title>Sentimeta PWA</title>
           <link rel="manifest" href="/static/manifest.json" />
           <link rel="icon" href="/static/favicon.ico" />
-          <link rel="stylesheet" href="/.next/static/style.css" />
+          <link rel="stylesheet" href="/_next/static/style.css" />
         </Head>
         <Loader loading={this.state.loading} />
       </div>
