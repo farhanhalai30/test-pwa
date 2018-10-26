@@ -1,8 +1,6 @@
-import React, { Component } from 'react';
-import Router from 'next/router';
-import Head from 'next/head';
-
-import Nav from './Nav';
+import React, { Component } from "react";
+import Router from "next/router";
+import Head from "next/head";
 
 class Header extends Component {
   state = { loading: false };
@@ -27,18 +25,19 @@ class Header extends Component {
           <meta name="description" content="An example PWA" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <meta name="theme-color" content="#302ecd" />
-          <title>Movies PWA</title>
-          <link rel="manifest" href="/_next/static/manifest.json" />
+          <title>Sentimeta PWA</title>
+          <link rel="manifest" href="/static/manifest.json" />
           <link rel="icon" href="/static/favicon.ico" />
           <link rel="stylesheet" href="/_next/static/style.css" />
         </Head>
         <Loader loading={this.state.loading} />
-        <Nav />
       </div>
     );
   }
 }
 
-const Loader = ({ loading }) => <div className={loading ? 'loading-show' : ''} id="loader-bar" />;
+const Loader = ({ loading }) => (
+  <div className={loading ? "loading-show" : ""} id="loader-bar" />
+);
 
 export default Header;

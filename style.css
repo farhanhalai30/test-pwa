@@ -7,9 +7,6 @@ header.navbar {
 }
 
 div.header {
-  display: flex;
-  flex-direction: column;
-  position: fixed;
   background: #ffffff;
   z-index: 2;
   top: 0;
@@ -51,7 +48,8 @@ div.home div.card {
   width: 300px;
   height: 500px;
   margin: 10px;
-  box-shadow: 0 10px 40px 0 rgba(62, 57, 107, 0.07), 0 2px 9px 0 rgba(62, 57, 107, 0.06);
+  box-shadow: 0 10px 40px 0 rgba(62, 57, 107, 0.07),
+    0 2px 9px 0 rgba(62, 57, 107, 0.06);
   transition: all 0.3s ease-out;
   cursor: pointer;
 }
