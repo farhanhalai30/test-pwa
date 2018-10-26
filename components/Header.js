@@ -26,7 +26,7 @@ class Header extends Component {
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <meta name="theme-color" content="#302ecd" />
           <title>Sentimeta PWA</title>
-          <link rel="manifest" href="/static/manifest.json" />
+          {/* <link rel="manifest" href="/static/manifest.json" /> */}
           <link rel="icon" href="/static/favicon.ico" />
           <link rel="stylesheet" href="/_next/static/style.css" />
         </Head>
