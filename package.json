@@ -4,7 +4,7 @@
     "dev": "node server.js",
     "build": "next build",
     "start": "next start -p $PORT",
-    "deploy": "yarn install && yarn start"
+    "deploy": "yarn install && yarn build && yarn start"
   },
   "browserslist": [
     "last 2 version"
